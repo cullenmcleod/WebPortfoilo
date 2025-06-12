@@ -32,7 +32,7 @@ export default function Navbar({menuOpen, setMenuOpen}) {
 
               <a href="#about" className="text-grey-300 hover:white transition-colors">
                 {""}
-                about
+                About
                 {""}
               </a>
 
@@ -43,7 +43,7 @@ export default function Navbar({menuOpen, setMenuOpen}) {
               </a>
               <a href="#contact" className="text-grey-300 hover:white transition-colors">
                 {""}
-                contact
+                Contact
                 {""}
               </a>
             </div>

@@ -6,7 +6,7 @@ export const Home = () => {
     <RevealOnScroll>
     <div className="text-center z-5 px-4">
       <h1 className="text-4xl md:text-6xl font-bold mb-4  leading-tight">
-        Hi, im Cullen Mcleod 
+        Hi, Im Cullen Mcleod 
       </h1>
       <p className="text-lg md:text-2xl mb-8 max-w-lg mx-auto" >
         A passionate software developer with a focus on web design.
