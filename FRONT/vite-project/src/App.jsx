@@ -1,19 +1,23 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { LoadingScreen } from './components/LoadingScreen'
 import './index.css'
-
+import Navbar from './components/Navbar';
+import  MoblieMenu from './components/MoblieMenu';
 
 function App() {
-
+  const [isloaded, setIsLoaded] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
-      <div className="test">
-        <h1>hello world</h1>
-      </div>
+      {!isloaded && <LoadingScreen onComplete={() => setIsLoaded(true)}/>}
+        <div className={`min-h-screen transition-opacity duration-700 ${isloaded ? 'opacity-100' : 'opacity-0'} bg-green-700 text-white`}>
+          <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+          <MoblieMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        </div>
     </>
-  )
-}
+    
+  );
+};
 
 export default App
