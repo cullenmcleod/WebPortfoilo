@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       {!isloaded && <LoadingScreen onComplete={() => setIsLoaded(true)}/>}
-        <div className={`min-h-screen transition-opacity duration-700 ${isloaded ? 'opacity-100' : 'opacity-0'} bg-green-700 text-white`}>
+        <div className={`min-h-screen transition-opacity duration-700 ${isloaded ? 'opacity-100' : 'opacity-0'} bg-emerald-600 text-white`}>
           <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
           <MoblieMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         </div>
