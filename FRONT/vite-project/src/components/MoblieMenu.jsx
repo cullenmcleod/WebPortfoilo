@@ -31,7 +31,7 @@ export const MoblieMenu = ({menuOpen, setMenuOpen}) =>{
                 {""}
               </a>
 
-              <a href="#Projects" onClick={()=> setMenuOpen(false)}className={`text-2xl text-grey-300 hover:white my-4 transition-colors justify-center items-center flex flex-col duration-300
+              <a href="#projects" onClick={()=> setMenuOpen(false)}className={`text-2xl text-grey-300 hover:white my-4 transition-colors justify-center items-center flex flex-col duration-300
             ${menuOpen ? "opacity-100  translate-y-0" :  'opacity-0 translate-y-5'}`}>
                 {""}
                 Projects
